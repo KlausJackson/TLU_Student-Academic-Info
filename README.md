@@ -10,10 +10,13 @@ Here I provide a class specifically designed for fetching and cleaning data from
     flex-wrap: wrap;
   }
   .first-row {
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
   }
-  .image-container img {
+  img {
     max-width: 30%;
+    max-height: 80%;
     height: auto;
     margin: 5px;
   }
@@ -27,10 +30,6 @@ Here I provide a class specifically designed for fetching and cleaning data from
   .small-div .imgs {
     display: flex;
     justify-content: center;
-  }
-  .small-div img {
-    max-width: 50%; 
-    margin: 5px;
   }
 </style>
 
