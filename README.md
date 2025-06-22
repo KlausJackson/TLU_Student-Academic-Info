@@ -3,54 +3,15 @@ Here I provide a class specifically designed for fetching and cleaning data from
 
 ## Preview
 
-<style>
-  .image-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .first-row {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
-  img {
-    max-width: 30%;
-    max-height: 80%;
-    height: auto;
-    margin: 5px;
-  }
-  .small-div {
-    display: flex;
-    flex-direction: column; 
-    flex: 1;
-    margin: 0 5px;
-    text-align: center;
-  }
-  .small-div .imgs {
-    display: flex;
-    justify-content: center;
-  }
-</style>
+| Login Screen | Class Schedule | Exam Schedule |
+| :---: | :---: | :---: |
+| <img src="previews/login.png" alt="Login Preview" width="250"> | <img src="previews/class_schedule.jpg" alt="Class Schedule" width="250"> | <img src="previews/exam_schedule.jpg" alt="Exam Schedule" width="250"> |
 
-<div class="image-container">
-    <div class="first-row">
-        <img src="previews/login.png" alt="Login Preview">
-        <img src="previews/class_schedule.jpg" alt="Class Schedule">
-        <img src="previews/exam_schedule.jpg" alt="Exam Schedule">
-    </div>
+<br>
 
-  <div class="small-div">
-    <div class="text">
-        <p>This is not my grade</p>
-        <p>Attendance tracking for selected subjects after fetching the class schedule; they remain even if you fetch a new class schedule.</p>
-    </div>
-    <div class="imgs">    
-        <img src="previews/grade.jpg" alt="Grade">
-        <img src="previews/attendance_tracking.jpg" alt="Attendance Tracking">
-    </div>
-  </div>
-</div>
+| Grade View | Attendance Tracking |
+| :---: | :---: |
+| This is not my grade, and I'm not getting defensive about it, I just need to make it clear.  <br> <img src="previews/grade.jpg" alt="Grade" width="250"> | Attendance tracking for selected subjects after fetching the class schedule; they remain even if you fetch a new class schedule.<br> <img src="previews/attendance_tracking.jpg" alt="Attendance Tracking" width="250"> |
 
 ## Overview
 As a student attending Thuy Loi University, you're probably familiar with our school website. It's notoriously slow, primarily because it sends hundreds of requests every time you perform an action. The last time I checked, it generated 134 requests and consumed 70MB of data. Most of the JSON that the server sends back is overwhelming, often containing up to 20,000 lines or even over 1,000,000 lines. In many fields and subfields, you'll find a plethora of null values, duplicated fields, or sometimes both.
